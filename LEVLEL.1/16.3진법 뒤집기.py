@@ -1,0 +1,12 @@
+def solution(n):
+    answer = ''
+    while n > 0:
+        n, mod = divmod(n, 3)
+        answer += str(mod)
+
+    return int(answer,3)
+
+
+
+print(solution(45))
+print(solution(125))
