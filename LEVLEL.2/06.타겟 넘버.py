@@ -27,5 +27,7 @@ def solution2(numbers, target):
             dfs(idx+1,result + numbers[idx])
             dfs(idx+1,result - numbers[idx])
     dfs(0,0)
+
+
 print(solution([4, 1, 2, 1],4))
 print(solution2([4, 1, 2, 1],4))
